@@ -1,0 +1,389 @@
+-- Monstrum's Gui to Lua\n-- Version: 3.2
+
+-- Instances:
+
+local gui = Instance.new("ScreenGui")
+local Combat = Instance.new("ScrollingFrame")
+local UIStroke = Instance.new("UIStroke")
+local UIGradient = Instance.new("UIGradient")
+local UIListLayout = Instance.new("UIListLayout")
+local TitleCombat = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Uitilities = Instance.new("ScrollingFrame")
+local UIStroke_2 = Instance.new("UIStroke")
+local UIGradient_2 = Instance.new("UIGradient")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TitleUtilities = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local Blatant = Instance.new("ScrollingFrame")
+local UIStroke_3 = Instance.new("UIStroke")
+local UIGradient_3 = Instance.new("UIGradient")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local TitleBlatant = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local World = Instance.new("ScrollingFrame")
+local UIStroke_4 = Instance.new("UIStroke")
+local UIGradient_4 = Instance.new("UIGradient")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local TitleWorld = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
+local Sound = Instance.new("Sound")
+Sound.SoundId =	"rbxassetid://9119713951"
+
+--Properties:
+
+gui.Name = "gui"
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Combat.Name = "Combat"
+Combat.Parent = gui
+Combat.Active = true
+Combat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Combat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Combat.BorderSizePixel = 0
+Combat.Position = UDim2.new(0.0446428545, 0, 0.0619612038, 0)
+Combat.Size = UDim2.new(0, 206, 0, 488)
+Combat.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Combat.BottomImage = "http://www.roblox.com/asset/?id=16376862656"
+Combat.MidImage = "http://www.roblox.com/asset/?id=15702060640"
+Combat.TopImage = "http://www.roblox.com/asset/?id=16376858572"
+Sound.Parent = Combat
+
+UIStroke.Parent = Combat
+UIStroke.Color = Color3.fromRGB(47, 227, 255)
+UIStroke.Transparency = 0.300
+UIStroke.Thickness = 5.000
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(0, 34, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = UIStroke
+
+UIListLayout.Parent = Combat
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+TitleCombat.Name = "Title Combat"
+TitleCombat.Parent = Combat
+TitleCombat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleCombat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleCombat.BorderSizePixel = 0
+TitleCombat.Size = UDim2.new(0, 206, 0, 50)
+TitleCombat.Font = Enum.Font.FredokaOne
+TitleCombat.Text = "Combat"
+TitleCombat.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleCombat.TextSize = 30.000
+TitleCombat.TextWrapped = true
+
+Uitilities.Name = "Uitilities"
+Uitilities.Parent = gui
+Uitilities.Active = true
+Uitilities.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Uitilities.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Uitilities.BorderSizePixel = 0
+Uitilities.Position = UDim2.new(0.425701529, 0, 0.0619612038, 0)
+Uitilities.Size = UDim2.new(0, 206, 0, 488)
+Uitilities.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Uitilities.BottomImage = "http://www.roblox.com/asset/?id=16376862656"
+Uitilities.MidImage = "http://www.roblox.com/asset/?id=15702060640"
+Uitilities.TopImage = "http://www.roblox.com/asset/?id=16376858572"
+
+UIStroke_2.Parent = Uitilities
+UIStroke_2.Color = Color3.fromRGB(47, 227, 255)
+UIStroke_2.Transparency = 0.300
+UIStroke_2.Thickness = 5.000
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(0, 34, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = UIStroke_2
+
+UIListLayout_2.Parent = Uitilities
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+TitleUtilities.Name = "Title Utilities"
+TitleUtilities.Parent = Uitilities
+TitleUtilities.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleUtilities.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleUtilities.BorderSizePixel = 0
+TitleUtilities.Size = UDim2.new(0, 206, 0, 50)
+TitleUtilities.Font = Enum.Font.FredokaOne
+TitleUtilities.Text = "Utilities"
+TitleUtilities.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleUtilities.TextSize = 30.000
+TitleUtilities.TextWrapped = true
+
+
+Blatant.Name = "Blatant"
+Blatant.Parent = gui
+Blatant.Active = true
+Blatant.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Blatant.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Blatant.BorderSizePixel = 0
+Blatant.Position = UDim2.new(0.233577803, 0, 0.0619612038, 0)
+Blatant.Size = UDim2.new(0, 206, 0, 488)
+Blatant.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Blatant.BottomImage = "http://www.roblox.com/asset/?id=16376862656"
+Blatant.MidImage = "http://www.roblox.com/asset/?id=15702060640"
+Blatant.TopImage = "http://www.roblox.com/asset/?id=16376858572"
+
+UIStroke_3.Parent = Blatant
+UIStroke_3.Color = Color3.fromRGB(47, 227, 255)
+UIStroke_3.Transparency = 0.300
+UIStroke_3.Thickness = 5.000
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(0, 34, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = UIStroke_3
+
+UIListLayout_3.Parent = Blatant
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+TitleBlatant.Name = "Title Blatant"
+TitleBlatant.Parent = Blatant
+TitleBlatant.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleBlatant.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleBlatant.BorderSizePixel = 0
+TitleBlatant.Size = UDim2.new(0, 206, 0, 50)
+TitleBlatant.Font = Enum.Font.FredokaOne
+TitleBlatant.Text = "Blatant"
+TitleBlatant.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleBlatant.TextSize = 30.000
+TitleBlatant.TextWrapped = true
+
+
+World.Name = "World"
+World.Parent = gui
+World.Active = true
+World.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+World.BorderColor3 = Color3.fromRGB(0, 0, 0)
+World.BorderSizePixel = 0
+World.Position = UDim2.new(0.618622422, 0, 0.0619612038, 0)
+World.Size = UDim2.new(0, 206, 0, 488)
+World.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+World.BottomImage = "http://www.roblox.com/asset/?id=16376862656"
+World.MidImage = "http://www.roblox.com/asset/?id=15702060640"
+World.TopImage = "http://www.roblox.com/asset/?id=16376858572"
+
+UIStroke_4.Parent = World
+UIStroke_4.Color = Color3.fromRGB(47, 227, 255)
+UIStroke_4.Transparency = 0.300
+UIStroke_4.Thickness = 5.000
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(0, 34, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Parent = UIStroke_4
+
+UIListLayout_4.Parent = World
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+
+TitleWorld.Name = "Title World"
+TitleWorld.Parent = World
+TitleWorld.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleWorld.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleWorld.BorderSizePixel = 0
+TitleWorld.Size = UDim2.new(0, 206, 0, 50)
+TitleWorld.Font = Enum.Font.FredokaOne
+TitleWorld.Text = "World"
+TitleWorld.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleWorld.TextSize = 30.000
+TitleWorld.TextWrapped = true
+
+
+-- Scripts:
+
+local function toggle1(name, callback1, callback2)
+	local TextButton = Instance.new("TextButton")
+	TextButton.Parent = Combat
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0, 0, 0.102459013, 0)
+	TextButton.Size = UDim2.new(0, 206, 0, 50)
+	TextButton.Font = Enum.Font.FredokaOne
+	TextButton.Text = name
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 20.000
+
+	local state = false -- Initial state
+
+	TextButton.MouseButton1Click:Connect(function()
+		if state then
+			callback1()
+			state = false
+		else
+			callback2()
+			state = true
+		end
+
+		Sound:Play() -- Play the sound when the button is clicked
+	end)
+end
+
+local function button1(name, callback)
+	local TextButton = Instance.new("TextButton")
+	TextButton.Parent = Combat
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0, 0, 0.204918027, 0) -- Adjusted position to prevent overlap
+	TextButton.Size = UDim2.new(0, 206, 0, 50)
+	TextButton.Font = Enum.Font.FredokaOne
+	TextButton.Text = name
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 20.000
+
+	TextButton.MouseButton1Click:Connect(function()
+		callback()
+		Sound:Play() -- Play the sound when the button is clicked
+	end)
+end
+
+local function toggle2(name, callback1, callback2)
+	local TextButton = Instance.new("TextButton")
+	TextButton.Parent = Blatant
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0, 0, 0.102459013, 0)
+	TextButton.Size = UDim2.new(0, 206, 0, 50)
+	TextButton.Font = Enum.Font.FredokaOne
+	TextButton.Text = name
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 20.000
+
+	local state = false -- Initial state
+
+	TextButton.MouseButton1Click:Connect(function()
+		if state then
+			callback1()
+			state = false
+		else
+			callback2()
+			state = true
+		end
+
+		Sound:Play() -- Play the sound when the button is clicked
+	end)
+end
+
+local function button2(name, callback)
+	local TextButton = Instance.new("TextButton")
+	TextButton.Parent = Blatant
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0, 0, 0.204918027, 0) -- Adjusted position to prevent overlap
+	TextButton.Size = UDim2.new(0, 206, 0, 50)
+	TextButton.Font = Enum.Font.FredokaOne
+	TextButton.Text = name
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 20.000
+
+	TextButton.MouseButton1Click:Connect(function()
+		callback()
+		Sound:Play() -- Play the sound when the button is clicked
+	end)
+end
+
+local function toggle3(name, callback1, callback2)
+	local TextButton = Instance.new("TextButton")
+	TextButton.Parent = Uitilities
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0, 0, 0.102459013, 0)
+	TextButton.Size = UDim2.new(0, 206, 0, 50)
+	TextButton.Font = Enum.Font.FredokaOne
+	TextButton.Text = name
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 20.000
+
+	local state = false -- Initial state
+
+	TextButton.MouseButton1Click:Connect(function()
+		if state then
+			callback1()
+			state = false
+		else
+			callback2()
+			state = true
+		end
+
+		Sound:Play() -- Play the sound when the button is clicked
+	end)
+end
+
+local function button3(name, callback)
+	local TextButton = Instance.new("TextButton")
+	TextButton.Parent = Uitilities
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0, 0, 0.204918027, 0) -- Adjusted position to prevent overlap
+	TextButton.Size = UDim2.new(0, 206, 0, 50)
+	TextButton.Font = Enum.Font.FredokaOne
+	TextButton.Text = name
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 20.000
+
+	TextButton.MouseButton1Click:Connect(function()
+		callback()
+		Sound:Play() -- Play the sound when the button is clicked
+	end)
+end
+
+local function toggle4(name, callback1, callback2)
+	local TextButton = Instance.new("TextButton")
+	TextButton.Parent = World
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0, 0, 0.102459013, 0)
+	TextButton.Size = UDim2.new(0, 206, 0, 50)
+	TextButton.Font = Enum.Font.FredokaOne
+	TextButton.Text = name
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 20.000
+
+	local state = false -- Initial state
+
+	TextButton.MouseButton1Click:Connect(function()
+		if state then
+			callback1()
+			state = false
+		else
+			callback2()
+			state = true
+		end
+
+		Sound:Play() -- Play the sound when the button is clicked
+	end)
+end
+
+local function button4(name, callback)
+	local TextButton = Instance.new("TextButton")
+	TextButton.Parent = World
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0, 0, 0.204918027, 0) -- Adjusted position to prevent overlap
+	TextButton.Size = UDim2.new(0, 206, 0, 50)
+	TextButton.Font = Enum.Font.FredokaOne
+	TextButton.Text = name
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 20.000
+
+	TextButton.MouseButton1Click:Connect(function()
+		callback()
+		Sound:Play() -- Play the sound when the button is clicked
+	end)
+end
+
+local frames = {Combat, Blatant, Uitilities, World} -- Assuming these frames are already defined in your script
+
+local function toggleFramesVisibility()
+	for _, frame in ipairs(frames) do
+		frame.Visible = not frame.Visible
+	end
+end
+
+game:GetService("UserInputService").InputBegan:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.RightShift and input.UserInputType == Enum.UserInputType.Keyboard then
+		toggleFramesVisibility()
+	end
+end)
